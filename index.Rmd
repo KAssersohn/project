@@ -1,0 +1,77 @@
+---
+title: "Woody plant vegetation structure"
+author: "Kat Assersohn"
+date: "2020-05-07"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: paper
+    highlight: pygments
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+![](p07n19vr.jpg)
+
+## Background
+
+This dataset includes structure measurements, including height, canopy diameter, and stem diameter, as well as mapped position of individual woody plants. **Please see link below for more information**
+
+
+[more information](https://data.neonscience.org/data-products/DP1.10098.001)
+
+## Prepare data
+
+```{r, echo=FALSE}
+knitr::read_chunk(here::here("analysis.R"))
+```
+
+```{r analysis-setup}
+
+```
+
+```{r}
+summary(individual)
+```
+
+```{r}
+DT::datatable(individual)
+```
+
+## Analysis
+
+```{r analysis-filter-data, warning = FALSE}
+
+```
+
+```{r analysis-set-factor-levels, warning = FALSE}
+
+```
+
+```{r analysis-fig1-barplot, warning = FALSE}
+
+```
+
+```{r analysis-fig2-violinplots, warning = FALSE}
+
+```
+
+```{r analysis-lm-overall, warning = FALSE}
+
+```
+
+```{r analysis-lm-fg3-overall, warning = FALSE}
+
+```
+
+```{r analysis-lm-growth, warning = FALSE}
+
+```
+
+```{r analysis-lm-fig4-growth, warning = FALSE}
+
+```
+
